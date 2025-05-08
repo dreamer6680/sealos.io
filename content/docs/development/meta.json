@@ -1,0 +1,17 @@
+{
+    "title": "开发与部署指南",
+    "pages": [
+        "intro",
+        "docker",
+        "sealos",
+        "configuration",
+        "faq",
+        "custom-models",
+        "modelConfig",
+        "proxy",
+        "openapi",
+        "upgrading",
+        "migration",
+        "design"
+    ]
+}
