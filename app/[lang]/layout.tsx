@@ -2,7 +2,6 @@ import { locales } from '@/lib/i18n';
 import { RootProvider } from 'fumadocs-ui/provider';
 import type { ReactNode } from 'react';
 import { Inter } from 'next/font/google';
-import { Analytics } from '@/components/analytics';
 import { generatePageMetadata } from '@/lib/utils/metadata';
 
 const inter = Inter({
@@ -37,13 +36,6 @@ export default function LocaleLayout({
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
 
-        {/*
-            Alternate URLs based on language
-            <link rel="alternate" hrefLang="en" href="https://sealos.io" />
-            <link rel="alternate" hrefLang="zh-CN" href="https://sealos.run" />
-            <link rel="alternate" hrefLang="x-default" href="https://sealos.io" /> 
-            */}
-
         {/* <link rel="dns-prefetch" href="https://hm.baidu.com" /> */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
@@ -51,7 +43,6 @@ export default function LocaleLayout({
         {/* <link rel="preconnect" href="https://hm.baidu.com" /> */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
 
-        <Analytics />
       </head>
       <body className="flex min-h-screen flex-col">
         <RootProvider

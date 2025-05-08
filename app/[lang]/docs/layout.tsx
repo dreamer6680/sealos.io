@@ -21,17 +21,6 @@ export default function Layout({
 
   return (
     <>
-      {showBanner && (
-        <Banner id="docs-banner" variant="rainbow">
-          🎉 Sealos 首充折扣，限时返场！最高立返 10000，活动日期 4月22日-4月28日
-          <Link href="https://cloud.sealos.run" className={styles.button}>
-            <span className={styles.buttonText}>查看详情</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path fillRule="evenodd" clipRule="evenodd" d="M7.75419 3.08752C7.52638 3.31532 7.52638 3.68467 7.75419 3.91248L10.2584 6.41666H2.33333C2.01117 6.41666 1.75 6.67783 1.75 7C1.75 7.32216 2.01117 7.58333 2.33333 7.58333H10.2584L7.75419 10.0875C7.52638 10.3153 7.52638 10.6847 7.75419 10.9125C7.98199 11.1403 8.35134 11.1403 8.57915 10.9125L12.0791 7.41248C12.307 7.18467 12.307 6.81532 12.0791 6.58752L8.57915 3.08752C8.35134 2.85971 7.98199 2.85971 7.75419 3.08752Z" fill="white"></path>
-            </svg>
-          </Link>
-        </Banner>
-      )}
       <DocsLayout
         tree={tree}
         {...baseOptions}

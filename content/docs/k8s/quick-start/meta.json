@@ -1,4 +1,0 @@
-{
-    "title": "快速开始",
-    "pages": ["install-cli", "deploy-kubernetes", "build-ingress-cluster-image"]
-}

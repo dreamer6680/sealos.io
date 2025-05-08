@@ -1,4 +1,0 @@
-{
-    "title": "数据库",
-    "pages": ["postgresql", "mysql", "redis", "mongodb", "kafka", "milvus"]
-}

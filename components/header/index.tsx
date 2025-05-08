@@ -40,7 +40,7 @@ export default function Header({ lang }: { lang: languagesType }) {
               className="flex items-center gap-2 font-bold"
             >
               <img
-                alt="Sealos Logo"
+                alt="FastGPT Logo"
                 src="/logo.svg"
                 className="h-8 w-8"
                 width={48}
@@ -103,7 +103,7 @@ export default function Header({ lang }: { lang: languagesType }) {
                           className="inline-flex items-center"
                         >
                           <img
-                            alt="Sealos Logo"
+                            alt="FastGPT Logo"
                             src="/logo.svg"
                             className="h-8 w-8"
                             width={48}

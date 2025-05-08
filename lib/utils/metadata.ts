@@ -19,15 +19,15 @@ export async function generateBlogMetadata(props: {
   if (!page && !isRootPage) notFound();
 
   let url = `${siteConfig.url.base}/blog`;
-  let docTitle = 'Sealos Blog';
+  let docTitle = 'FastGPT Blog';
   let imageUrl = blogImageApi + docTitle;
-  let description = 'Sealos Blog';
-  let keywords = ['Sealos', 'Blog'];
+  let description = 'FastGPT Blog';
+  let keywords = ['FastGPT', 'Blog'];
 
   if (page) {
     url = `${siteConfig.url.base}/blog/${page.slugs.join('/')}`;
     imageUrl = blogImageApi + (page.data.imageTitle || page.data.title);
-    docTitle = `${page.data.title} | Sealos Blog`;
+    docTitle = `${page.data.title} | FastGPT Blog`;
     description = page.data.description;
   }
 
@@ -80,12 +80,12 @@ export function generateDocsMetadata({
   const url = `${siteConfig.url.base}/docs/${page.slugs.join('/')}`;
   const imageUrl =
     docsImageApi +
-    (fullPathTitle ? fullPathTitle.toUpperCase() : 'Sealos Docs');
+    (fullPathTitle ? fullPathTitle.toUpperCase() : 'FastGPT Docs');
 
   const isRootPage = !params.slug || params.slug.length === 0;
   const docTitle = isRootPage
-    ? 'Sealos Docs'
-    : `${fullPathTitle} | Sealos Docs`;
+    ? 'FastGPT Docs'
+    : `${fullPathTitle} | FastGPT Docs`;
 
   return {
     metadataBase: new URL(siteConfig.url.base),

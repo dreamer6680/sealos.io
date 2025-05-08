@@ -1,3 +1,4 @@
 {
-    "pages": ["[House][Home](/docs)", "quick-start", "overview", "examples", "guides", "system-design", "msa"]
+    "title": "FastGPT Docs",
+    "pages": ["index","test","development", "FAQ", "shopping_cart"]
 }

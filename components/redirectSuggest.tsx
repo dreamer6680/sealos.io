@@ -77,11 +77,11 @@ export default function RedirectSuggest() {
             </h3>
             <div className="relative max-xl:text-sm md:w-60 xl:w-[400px]">
               <p className="leading-[180%] text-[#93919A] ">
-              检测到您是中国大陆IP，推荐您使用 Sealos 中国大陆版（人民币计费）以享受本地化价格与服务。
+              检测到您是中国大陆IP，推荐您使用 FastGPT 中国大陆版（人民币计费）以享受本地化价格与服务。
               </p>
               <a
                 className="absolute bottom-0 right-0 text-[#52AEFF] "
-                href="https://sealos.run/"
+                href="https://fastgpt.run/"
               >
                 立即前往&gt;&gt;
               </a>

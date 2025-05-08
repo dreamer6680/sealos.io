@@ -16,15 +16,15 @@ export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
       <div className="flex items-center gap-1">
-        <img alt="Sealos Logo" src="/logo.svg" />
-        <span className="hidden text-base font-bold md:block">Sealos</span>
+        <img alt="FastGPT Logo" src="/logo.svg" />
+        <span className="hidden text-base font-bold md:block">FastGPT</span>
       </div>
     ),
   },
   themeSwitch: {
     enabled: false,
   },
-  githubUrl: 'https://github.com/labring/sealos',
+  githubUrl: 'https://github.com/labring/FastGPT',
 };
 
 // Define the basic structure of navigation links
