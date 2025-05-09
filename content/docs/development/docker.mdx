@@ -73,34 +73,34 @@ Zilliz Cloud 由 Milvus 原厂打造，是全托管的 SaaS 向量数据库服�
 
 <Tabs>
   <Tab title="Linux">
-    ```bash
-    # 安装 Docker
-    curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
-    systemctl enable --now docker
-    # 安装 docker-compose
-    curl -L https://github.com/docker/compose/releases/download/v2.20.3/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
-    chmod +x /usr/local/bin/docker-compose
-    # 验证安装
-    docker -v
-    docker-compose -v
-    # 如失效，自行百度~
-    ```
+```bash
+# 安装 Docker
+curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+systemctl enable --now docker
+# 安装 docker-compose
+curl -L https://github.com/docker/compose/releases/download/v2.20.3/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+# 验证安装
+docker -v
+docker-compose -v
+# 如失效，自行百度~
+```
   </Tab>
   <Tab title="MacOS">
-    推荐直接使用 [Orbstack](https://orbstack.dev/)。可直接通过 Homebrew 来安装：
+推荐直接使用 [Orbstack](https://orbstack.dev/)。可直接通过 Homebrew 来安装：
 
-    ```bash
-    brew install orbstack
-    ```
+```bash
+brew install orbstack
+```
 
-    或者直接[下载安装包](https://orbstack.dev/download)进行安装。
+或者直接[下载安装包](https://orbstack.dev/download)进行安装。
   </Tab>
   <Tab title="Windows">
-    我们建议将源代码和其他数据绑定到 Linux 容器中时，将其存储在 Linux 文件系统中，而不是 Windows 文件系统中。
+我们建议将源代码和其他数据绑定到 Linux 容器中时，将其存储在 Linux 文件系统中，而不是 Windows 文件系统中。
 
-    可以选择直接[使用 WSL 2 后端在 Windows 中安装 Docker Desktop](https://docs.docker.com/desktop/wsl/)。
+可以选择直接[使用 WSL 2 后端在 Windows 中安装 Docker Desktop](https://docs.docker.com/desktop/wsl/)。
 
-    也可以直接[在 WSL 2 中安装命令行版本的 Docker](https://nickjanetakis.com/blog/install-docker-in-wsl-2-without-docker-desktop)。
+也可以直接[在 WSL 2 中安装命令行版本的 Docker](https://nickjanetakis.com/blog/install-docker-in-wsl-2-without-docker-desktop)。
   </Tab>
 </Tabs>
 
@@ -117,7 +117,7 @@ Zilliz Cloud 由 Milvus 原厂打造，是全托管的 SaaS 向量数据库服�
 
 所有 `docker-compose.yml` 配置文件中 `MongoDB` 为 5.x，需要用到AVX指令集，部分 CPU 不支持，需手动更改其镜像版本为 4.4.24**（需要自己在docker hub下载，阿里云镜像没做备份）
 
- </Alert>
+</Alert>
 
 **Linux 快速脚本**
 
@@ -143,22 +143,24 @@ curl -o docker-compose.yml https://raw.githubusercontent.com/labring/FastGPT/mai
 
 <Tabs>
   <Tab title="PgVector版本">
-    无需操作
+无需操作
   </Tab>
   <Tab title="Oceanbase版本">
-    无需操作
+无需操作
   </Tab>
   <Tab title="Milvus版本">
-    无需操作
+无需操作
   </Tab>
   <Tab title="Zilliz版本">
-    打开 [Zilliz Cloud](https://zilliz.com.cn/), 创建实例并获取相关秘钥。
+打开 [Zilliz Cloud](https://zilliz.com.cn/), 创建实例并获取相关秘钥。
 
-    ![zilliz_key](/imgs/zilliz_key.png)
+![zilliz_key](/imgs/zilliz_key.png)
 
-    <Alert icon="🤖" context="success">
-    1. 修改`MILVUS_ADDRESS`和`MILVUS_TOKEN`链接参数，分别对应 `zilliz` 的 `Public Endpoint` 和 `Api key`，记得把自己ip加入白名单。
-    </Alert>
+<Alert icon="🤖" context="success">
+
+1. 修改`MILVUS_ADDRESS`和`MILVUS_TOKEN`链接参数，分别对应 `zilliz` 的 `Public Endpoint` 和 `Api key`，记得把自己ip加入白名单。
+
+</Alert>
   </Tab>
 </Tabs>
 
@@ -326,7 +328,6 @@ docker-compose 端口定义为：`映射端口:运行端口`。
 PG 数据库没有连接上/初始化失败，可以查看日志。FastGPT 会在每次连接上 PG 时进行表初始化，如果报错会有对应日志。
 
 1. 检查数据库容器是否正常启动
-
 2. 非 docker 部署的，需要手动安装 pg vector 插件
 3. 查看 fastgpt 日志，有没有相关报错
 

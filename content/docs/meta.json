@@ -1,4 +1,4 @@
 {
     "title": "FastGPT Docs",
-    "pages": ["index","test","development", "FAQ", "shopping_cart"]
+    "pages": ["intro","test","development", "FAQ", "shopping_cart","agreement","community"]
 }

@@ -50,7 +50,7 @@ git clone git@github.com:<github_username>/FastGPT.git
 ### 3. 安装数据库
 
 第一次开发，需要先部署数据库，建议本地开发可以随便找一台 2C2G 的轻量小数据库实践，或者新建文件夹并配置相关文件用以运行docker。数据库部署教程：[Docker 快速部署](/docs/development/docker/)。部署完了，可以本地访问其数据库。
-<Alert context="success">
+<Alert context="warning">
 Mongo 数据库需要注意，需要注意在连接地址中增加 `directConnection=true` 参数，才能连接上副本集的数据库。
 </Alert>
 
@@ -178,8 +178,8 @@ core - 核心功能（知识库，工作流，应用，对话）
 support - 支撑功能（用户体系，计费，鉴权等）
 common - 基础功能（日志管理，文件读写等）
 
-<details >
-  <summary>代码结构说明</summary>
+<details>
+<summary>代码结构说明</summary>
 
 ```
 .
