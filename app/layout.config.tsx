@@ -12,7 +12,7 @@ import { getLanguageSlug, languagesType } from '@/lib/i18n';
  */
 export const baseOptions: BaseLayoutProps = {
   i18n: true,
-  disableThemeSwitch: true,
+  disableThemeSwitch: false,
   nav: {
     title: (
       <div className="flex items-center gap-1">
@@ -22,7 +22,7 @@ export const baseOptions: BaseLayoutProps = {
     ),
   },
   themeSwitch: {
-    enabled: false,
+    enabled: true,
   },
   githubUrl: 'https://github.com/labring/FastGPT',
 };

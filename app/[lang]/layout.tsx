@@ -64,10 +64,9 @@ export default function LocaleLayout({
             }[params.lang],
           }}
           theme={{
-            forcedTheme: 'light',
-            defaultTheme: 'light',
-            enabled: false,
-            enableSystem: false,
+            defaultTheme: 'system',
+            enabled: true,
+            enableSystem: true
           }}
         >
           {children}
