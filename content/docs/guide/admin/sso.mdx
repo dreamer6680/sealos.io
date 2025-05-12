@@ -50,15 +50,42 @@ FastGPT-SSO-Service 是为了聚合不同来源的 SSO 和成员同步接口，�
 
 根据不同的提供商，你需要配置不同的环境变量，下面是内置的通用协议/IM：
 
-
-| 协议/功能      | SSO | 成员同步支持 |
-|----------------|----------|--------------|
-| 飞书           | 是       | 是           |
-| 企业微信 | 是       | 是           |
-| 钉钉           | 是       | 否           |
-| Saml2.0        | 是       | 否           |
-| Oauth2.0       | 是       | 否           |
-
+<table class="table-hover table-striped-columns">
+  <thead>
+    <tr>
+      <th>协议/功能</th>
+      <th>SSO</th>
+      <th>成员同步支持</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>飞书</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>企业微信</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>钉钉</td>
+      <td>是</td>
+      <td>否</td>
+    </tr>
+    <tr>
+      <td>Saml2.0</td>
+      <td>是</td>
+      <td>否</td>
+    </tr>
+    <tr>
+      <td>Oauth2.0</td>
+      <td>是</td>
+      <td>否</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2. 配置 fastgpt-pro
 
@@ -74,11 +101,22 @@ env:
 
 #### 2. 在商业版后台配置按钮文字，图标等。
 
-
-| <div style="text-align:center">企业微信</div> | <div style="text-align:center">钉钉</div> | <div style="text-align:center">飞书</div> |
-|-----------|-----------------|--------------|
-| ![企业微信](/imgs/sso15.png)  |  ![钉钉](/imgs/sso16.png)       | ![飞书](/imgs/sso17.png)     |
-
+<table class="table-hover table-striped-columns text-center">
+  <thead>
+    <tr>
+      <th>企业微信</th>
+      <th>钉钉</th>
+      <th>飞书</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>![企业微信](/imgs/sso15.png)</td>
+      <td>![钉钉](/imgs/sso16.png)</td>
+      <td>![飞书](/imgs/sso17.png)</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 3. 开启成员同步（可选）
 
@@ -237,7 +275,7 @@ fastgpt-sso:
 
       c. 配置网页授权，JS-SDK以及企业微信授权登陆
 
-      d. 可以在【企业微信授权登陆】页面下方设置“在工作台隐藏应用”
+      d. 可以在【企业微信授权登陆】页面下方设置"在工作台隐藏应用"
 
       ![](/imgs/sso10.png)
 
@@ -245,9 +283,9 @@ fastgpt-sso:
 
       ![](/imgs/sso12.png)
 
-   4. 获取 “通讯录同步助手” secret
+   4. 获取 "通讯录同步助手" secret
 
-      获取通讯录，组织成员 ID 需要使用 “通讯录同步助手” secret
+      获取通讯录，组织成员 ID 需要使用 "通讯录同步助手" secret
 
       【安全与管理】-- 【管理工具】 -- 【通讯录同步】
 

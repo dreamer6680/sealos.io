@@ -48,18 +48,18 @@ HTTP 模块会向对应的地址发送一个 `HTTP` 请求，实际操作与 Pos
 
 不多描述，使用方法和Postman, ApiFox 基本一致。
 
-可通过 {{key}} 来引入变量。例如：
+可通过 `{{key}}` 来引入变量。例如：
 
 | key | value |
 | --- | --- |
-| appId | {{appId}} |
-| Authorization | Bearer {{token}} |
+| appId | `{{appId}}` |
+| Authorization | Bearer `{{token}}` |
 
 ### Body
 
 只有特定请求类型下会生效。
 
-可以写一个`自定义的 Json`，并通过 {{key}} 来引入变量。例如：
+可以写一个`自定义的 Json`，并通过 `{{key}}` 来引入变量。例如：
 
 <Tabs>
   <Tab title="假设有一组变量" >
